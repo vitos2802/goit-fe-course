@@ -21,11 +21,11 @@ body {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 74px 0;
 }
 
 .header {
-    padding: 0 163px;
+    padding: 76px 0 50px;
+    text-align: center;
 }
 
 .nav__item {
@@ -47,7 +47,7 @@ body {
 }
 
 .main-content {
-    padding: 104px 0 54px;
+    padding: 54px 0 54px;
     word-spacing: -4px;
 }
 
@@ -89,4 +89,8 @@ body {
     color: #626262;
     font-size: 20px;
     border: 1px solid #626262;
+}
+
+.btn_margin-bottom {
+    margin-bottom: 70px;
 }
