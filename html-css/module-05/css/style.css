@@ -121,6 +121,7 @@ body {
 }
 
 .slider__item-title {
+    white-space: nowrap;
     color: #ffffff;
     font-size: 60px;
     line-height: 82px;
@@ -149,11 +150,11 @@ body {
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;
+    background-color: rgba(78, 198, 171, .5);
 }
 
 .slider__btn:hover {
-    background-color: #4ec6ab;
+    background-color: rgba(78, 198, 171, 1);
 }
 
 .slider__btn-prev {
