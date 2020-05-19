@@ -343,6 +343,10 @@ button {
           order: 2;
      }
 
+     .partner__link {
+          width: 192px;
+     }
+
 }
 
 @media (min-width: 1440px) {
