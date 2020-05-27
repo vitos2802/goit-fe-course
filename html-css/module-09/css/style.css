@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); 
+  }
+ 
+@font-face {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 700;
+     src: local('Montserrat Bold'), local('Montserrat-Bold'),
+          url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+          url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+}
+
+/* roboto-300 - latin */
+@font-face {
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 300;
+     src: local('Roboto Light'), local('Roboto-Light'),
+          url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   }
+   /* roboto-regular - latin */
+   @font-face {
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     src: local('Roboto'), local('Roboto-Regular'),
+          url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   }
+
+:root {
+     --main-font: 'Montserrat', sans-serif;
+     --second-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+.header {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.header__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.header__btn {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header__btn-sign-up {
+    width: 90px;
+    height: 36px;
+    border: 2.0px solid #ffffff;
+    border-radius: 20px;
+}
+
+.logo {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
+
+.hero {
+    background-color: #1a1915;
+    background-image: url(../img/holiday-320.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 226px 0 138px 0;
+}
+
+.hero__title {
+    max-width: 290px;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.05px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+
+.hero__desc {
+    max-width: 217px;
+    font-family: var(--second-font);
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 300;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.hero__link {
+    width: 280px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #ff4e50;
+    border-radius: 20px;
+}
+
+.partner {
+    padding: 66px 0 56px 0;
+    text-align: center;
+}
+
+.partner__title-wrap {
+    margin-bottom: 12px;
+}
+
+.partner__title {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #333333;
+}
+
+.partner__list {
+    margin-bottom: 26px;
+}
+
+.partner__item {
+    max-width: 247px;
+}
+
+.partner__item-img-wrap {
+    position: relative;
+    width: 121px;
+    height: 121px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+
+.partner__item-img-wrap::after {
+    content: "";
+    display: block;
+    width: 33px;
+    height: 33px;
+    border: 4.0px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.partner__item-img-wrap-tv::after {
+    background-image: url(../img/icons/tv.png);
+    background-color: #ff4e50;
+}
+
+.partner__item-img-wrap-flask::after {
+    background-image: url(../img/icons/flask.png);
+    background-color: #ffa507;
+}
+
+.partner__item-img-wrap-coffee::after {
+    background-image: url(../img/icons/cofee.png);
+    background-color: #1cd7ad;
+}
+
+.partner__item-img-wrap-message::after {
+    background-image: url(../img/icons/message.png);
+    background-color: #4e73db;
+}
+
+.partner__item-img {
+    border-radius: 50%;
+}
+
+.partner__item-name {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 12px;
+}
+
+.partner__item-desc {
+    font-family: var(--second-font);
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #666666;
+}
+
+.partner__link {
+    width: 280px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2.0px solid #ff4e50;
+    border-radius: 20px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ff4e50;
+}
+
+@media (max-width:767px) {
+    .header__wrap-btn {
+        margin-bottom: 112px;
+    }
+
+    .partner__item {
+        margin: 0 auto;
+   }
+
+   .partner__item:not(:last-child) {
+        margin-bottom: 26px;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .partner__item:nth-child(odd) {
+         margin-bottom: 56px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .header {
+        padding: 38px 0;
+    }
+
+    .header__list {
+        justify-content: flex-end;
+    }
+
+    .logo-wrap {
+        text-align: start;
+    }
+
+    .hero {
+        background-image: url(../img/holiday-768.png);
+        padding: 220px 0 234px 0;
+   }
+
+    .hero__title {
+        font-size: 52px;
+        margin-bottom: 30px;
+        max-width: 510px;
+    }
+
+    .hero__desc {
+        max-width: 400px;
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+
+    .hero__link {
+        width: 226px;
+    }
+
+    .partner {
+        padding: 70px 0 40px 0;
+    }
+
+    .partner__title-wrap {
+        margin-bottom: 30px;
+    }
+
+    .partner__link {
+        width: 192px;
+   }
+}
+
+@media (min-width: 992px) {
+    .hero {
+        background-image: url(../img/holiday-1440.png);
+   }
+
+   .partner {
+    padding: 70px 0;
+}
+}
